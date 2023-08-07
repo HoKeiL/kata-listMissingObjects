@@ -1,6 +1,6 @@
 import listMissingObjects from "./listMissingObjects";
 
-test("sum adds two numbers", () => {
+test("returns an array of the objects from the first array which do not have a match in the second array", () => {
   expect(
     listMissingObjects(
       [
@@ -16,7 +16,3 @@ test("sum adds two numbers", () => {
     ),
   ).toEqual([{ id: 1, name: "fred" }]);
 });
-
-// test("sum adds two numbers cancelling", () => {
-//   expect(sum(-4, 4)).toBe(0);
-// });
